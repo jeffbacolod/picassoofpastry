@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useLanguage } from '../i18n/LanguageContext';
 import { ORDER_URL } from '../data/products';
+import StableText from './StableText';
 
 // Small sticky order button on phones, shown after the hero.
 export default function FloatingOrder() {
-  const { t } = useLanguage();
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -22,7 +21,7 @@ export default function FloatingOrder() {
         show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
       }`}
     >
-      {t('cta_order')}
+      <StableText k="cta_order" />
     </a>
   );
 }

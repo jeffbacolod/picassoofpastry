@@ -3,6 +3,6 @@
 export const LANGUAGES = [
   { code: 'EN', key: 'en' },
   { code: 'CEB', key: 'ceb' },
-  { code: 'TL', key: 'fil' },
+  { code: 'TAL', key: 'fil' },
   { code: 'ES', key: 'es' },
 ];

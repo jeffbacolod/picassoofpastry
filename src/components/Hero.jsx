@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { ORDER_URL } from '../data/products';
+import StableText from './StableText';
 
 const LUXURY_EASE = 'cubic-bezier(0.2, 0.6, 0.2, 1)';
 
@@ -86,7 +87,7 @@ export default function Hero() {
             href="#collections"
             className="inline-block font-jost text-[12px] tracking-[0.3em] uppercase px-5 sm:px-10 py-4 bg-pearl text-burgundy border border-pearl hover:bg-transparent hover:text-pearl transition-all duration-300 hover:tracking-[0.32em]"
           >
-            {t('cta_discover')}
+            <StableText k="cta_discover" />
           </a>
           <a
             href={ORDER_URL}
@@ -94,14 +95,14 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="inline-block font-jost text-[12px] tracking-[0.3em] uppercase px-5 sm:px-10 py-4 border border-champagne text-champagne-light hover:bg-champagne hover:text-plum transition-all duration-300 hover:tracking-[0.32em]"
           >
-            {t('cta_order')}
+            <StableText k="cta_order" />
           </a>
         </div>
       </div>
 
       {/* Scroll cue */}
       <a href="#collections" aria-label={t('cta_discover')} className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2 text-champagne/70 hover:text-champagne transition-colors">
-        <span className="font-jost text-[10px] tracking-[0.4em] uppercase">{t('scroll')}</span>
+        <span className="font-jost text-[10px] tracking-[0.4em] uppercase"><StableText k="scroll" /></span>
         <span className="block w-px h-8 bg-champagne/60" />
       </a>
     </section>

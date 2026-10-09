@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useLanguage } from '../i18n/LanguageContext';
 import { ORDER_URL } from '../data/products';
 import LanguageSwitch from './LanguageSwitch';
+import StableText from './StableText';
 
 export default function Header() {
-  const { t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -52,7 +51,7 @@ export default function Header() {
                 solid ? 'text-muted hover:text-burgundy' : 'text-pearl/70 hover:text-pearl'
               }`}
             >
-              {t(key)}
+              <StableText k={key} />
             </a>
           ))}
         </nav>
@@ -70,7 +69,7 @@ export default function Header() {
                 : 'border-champagne text-champagne-light hover:bg-champagne hover:text-plum'
             }`}
           >
-            {t('cta_order')}
+            <StableText k="cta_order" />
           </a>
         </div>
 
@@ -102,7 +101,7 @@ export default function Header() {
               className="font-jost text-[13px] tracking-[0.25em] uppercase text-muted hover:text-burgundy transition-colors"
               onClick={() => setMenuOpen(false)}
             >
-              {t(key)}
+              <StableText k={key} />
             </a>
           ))}
           <a
@@ -111,7 +110,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="font-jost text-[12px] tracking-[0.3em] uppercase px-8 py-3.5 bg-burgundy text-pearl border border-burgundy"
           >
-            {t('cta_order')}
+            <StableText k="cta_order" />
           </a>
           <LanguageSwitch className="pt-4 border-t border-stone/40" />
         </nav>

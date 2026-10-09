@@ -30,8 +30,8 @@ export default function Maison() {
         {/* Image */}
         <div className="img-hover-zoom">
           <img
-            src="/images/collections/heirloom-trio.webp"
-            alt="Mama's Brazo de Mercedes, Moist Banana Cheesecake and Moist Ube Cheesecake"
+            src="/images/collections/collection-placeholder.webp"
+            alt="Picasso of Pastry boxes"
             className="w-full aspect-[4/5] object-cover"
             loading="lazy"
           />
