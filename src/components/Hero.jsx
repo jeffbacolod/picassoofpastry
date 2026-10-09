@@ -66,7 +66,7 @@ export default function Hero() {
       <div className="absolute inset-5 md:inset-8 z-[1] border border-champagne/20 pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 w-full px-8 pt-28 sm:px-[8%] md:pt-0 lg:px-[10%] flex flex-col items-center text-center md:items-start md:text-left">
+      <div className="relative z-10 w-full px-8 pt-36 sm:px-[8%] md:pt-0 lg:px-[10%] flex flex-col items-center text-center md:items-start md:text-left">
         <p ref={eyebrowRef} className="font-jost text-[11px] tracking-[0.45em] uppercase text-champagne mb-5 md:mb-8">
           {t('hero_eyebrow')}
         </p>

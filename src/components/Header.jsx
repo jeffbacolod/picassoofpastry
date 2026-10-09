@@ -29,7 +29,14 @@ export default function Header() {
         solid ? 'bg-pearl/95 backdrop-blur shadow-[0_1px_0_0_var(--color-stone)]' : 'bg-transparent'
       }`}
     >
-      <div className="flex items-center justify-between px-6 py-5 sm:px-[5%] xl:px-[3.5%] 2xl:px-[8%]">
+      {/* At the top of the page the row sits well inside the hero's gold frame; once scrolled it tightens into a compact bar */}
+      <div
+        className={`flex items-center justify-between transition-all duration-500 ${
+          solid
+            ? 'px-6 py-5 sm:px-[5%] xl:px-[3.5%] 2xl:px-[8%]'
+            : 'px-12 pt-11 pb-5 sm:px-[7%] md:pt-16 xl:px-[5%] 2xl:px-[8%]'
+        }`}
+      >
         {/* Wordmark */}
         <a
           href="#top"
@@ -42,7 +49,7 @@ export default function Header() {
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden xl:flex flex-1 justify-center items-center gap-6 2xl:gap-10 mx-6">
+        <nav className="hidden xl:flex flex-1 justify-center items-center gap-5 2xl:gap-10 mx-5">
           {navItems.map(({ key, href }) => (
             <a
               key={key}
@@ -57,7 +64,7 @@ export default function Header() {
         </nav>
 
         {/* Right side: Language + Order */}
-        <div className="hidden xl:flex items-center gap-6 2xl:gap-8 shrink-0">
+        <div className="hidden xl:flex items-center gap-5 2xl:gap-8 shrink-0">
           <LanguageSwitch light={!solid} />
           <a
             href={ORDER_URL}
