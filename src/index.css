@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  /* Light canvases */
+  --color-pearl: #FBF7F2;
+  --color-linen: #F3EBE3;
+  /* Text */
+  --color-graphite: #2A1418;
+  --color-header: #3E1520;
+  --color-muted: #8E7B76;
+  --color-stone: #D9C7B8;
+  /* Primary — deep burgundy / bordeaux / plum */
+  --color-burgundy: #6B1A2B;
+  --color-bordeaux: #4A0F1E;
+  --color-plum: #2B0912;
+  /* Secondary — champagne gold (accents & ribbons only) */
+  --color-champagne: #C9A96E;
+  --color-champagne-light: #E8D6AE;
+  --color-dark: #1C060C;
+
+  --font-playfair: 'Playfair Display SC', serif;
+  --font-spectral: 'Spectral', serif;
+  --font-jost: 'Inter', sans-serif;
+}
+
+/* Reset handled by Tailwind v4's @layer base — do not add unlayered * resets */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-jost);
+  font-weight: 300;
+  color: var(--color-graphite);
+  background-color: var(--color-pearl);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-burgundy);
+  color: var(--color-pearl);
+}
+
+/* Scroll reveal base */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 1s cubic-bezier(0.2, 0.6, 0.2, 1),
+              transform 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children — delay set via JS custom property */
+[data-stagger-child] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 1s cubic-bezier(0.2, 0.6, 0.2, 1),
+              transform 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+  transition-delay: var(--stagger-delay, 0ms);
+}
+
+.visible [data-stagger-child] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, [data-stagger-child] { opacity: 1; transform: none; transition: none; }
+  .marquee-track, .ribbon-shimmer { animation: none; }
+}
+
+/* Image hover zoom */
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom > * {
+  transition: transform 0.9s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.img-hover-zoom:hover > * {
+  transform: scale(1.03);
+}
+
+/* Button hover — subtle letter-spacing shift */
+a[class*="tracking-"][class*="uppercase"] {
+  transition: color 0.3s, background-color 0.3s, letter-spacing 0.3s, border-color 0.3s;
+}
+
+/* Champagne hairline divider */
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-champagne), transparent);
+}
+
+/* Slow shimmer along the hero ribbon */
+@keyframes shimmer {
+  0% { background-position: 0 -200%; }
+  100% { background-position: 0 200%; }
+}
+
+.ribbon-shimmer {
+  background: linear-gradient(180deg, transparent 0%, var(--color-champagne) 45%, var(--color-champagne-light) 50%, var(--color-champagne) 55%, transparent 100%);
+  background-size: 100% 200%;
+  animation: shimmer 6s ease-in-out infinite;
+}
+
+/* Infinite marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 45s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
