@@ -33,7 +33,7 @@ export default function CollectionGrid() {
                   {t(`${season}_title`)}
                 </h3>
                 <div className="img-hover-zoom mb-6">
-                  <ProductVisual tone={tone} glow={glow} variant="stack" />
+                  <ProductVisual tone={tone} glow={glow} variant="stack" looks={products.map((key) => PRODUCTS[key].look)} />
                 </div>
                 <p className="font-spectral italic text-muted mb-6 min-h-[3em]">
                   {t(`${season}_desc`)}

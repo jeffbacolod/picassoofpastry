@@ -1,7 +1,7 @@
 import PastryBox from './PastryBox';
 
-// Real photo when available, otherwise the burgundy box artwork.
-export default function ProductVisual({ product, tone, glow, aspect = 'aspect-[3/4]', variant = 'single' }) {
+// Real photo when available, otherwise the window-box artwork.
+export default function ProductVisual({ product, tone, glow, looks, aspect = 'aspect-[3/4]', variant = 'single' }) {
   if (product?.image) {
     return (
       <img
@@ -12,5 +12,5 @@ export default function ProductVisual({ product, tone, glow, aspect = 'aspect-[3
       />
     );
   }
-  return <PastryBox tone={tone} glow={glow} label={product?.name} variant={variant} className={`w-full ${aspect} block`} />;
+  return <PastryBox tone={tone} glow={glow} label={product?.name} look={product?.look} looks={looks} variant={variant} className={`w-full ${aspect} block`} />;
 }

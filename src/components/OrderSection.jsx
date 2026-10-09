@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import OrderLink from './OrderLink';
 
-// Final call to action: order via Facebook, or join the launch list.
+// Final call to action: order via Facebook, or join the VIP waitlist.
 export default function OrderSection() {
   const { t } = useLanguage();
   const [email, setEmail] = useState('');
@@ -33,13 +33,16 @@ export default function OrderSection() {
         </div>
       </div>
 
-      {/* Newsletter */}
+      {/* VIP waitlist */}
       <div className="py-20 md:py-28 px-8 lg:px-20 xl:px-32">
         <div className="max-w-xl mx-auto text-center reveal">
-          <h2 className="font-spectral text-[clamp(1.75rem,3vw,2.5rem)] text-header mb-3">
+          <p className="font-jost text-[11px] tracking-[0.35em] uppercase text-champagne mb-4">
+            {t('newsletter_label')}
+          </p>
+          <h2 className="font-spectral text-[clamp(1.75rem,3vw,2.5rem)] text-header mb-4">
             {t('newsletter_head')}
           </h2>
-          <p className="font-jost text-[14px] text-muted mb-10">
+          <p className="font-jost text-[14px] leading-relaxed text-muted mb-10 [text-wrap:balance]">
             {sent ? t('newsletter_thanks') : t('newsletter_sub')}
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">

@@ -1,6 +1,7 @@
 import { useLanguage } from '../i18n/LanguageContext';
 import { brandify } from '../utils/brandify';
 import PastryBox from './PastryBox';
+import { HEIRLOOM, PRODUCTS } from '../data/products';
 
 // Origin story — born in a mother's kitchen.
 export default function Maison() {
@@ -30,7 +31,7 @@ export default function Maison() {
 
         {/* Image */}
         <div className="img-hover-zoom">
-          <PastryBox tone="burgundy" glow="#8A3A2A" variant="stack" className="w-full aspect-[4/5] block" />
+          <PastryBox tone="burgundy" glow="#8A3A2A" variant="stack" looks={HEIRLOOM.map((key) => PRODUCTS[key].look)} className="w-full aspect-[4/5] block" />
         </div>
       </div>
     </section>

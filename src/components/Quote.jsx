@@ -11,7 +11,10 @@ export default function Quote() {
           <span className="block">{t('quote_line1')}</span>
           <span className="block italic text-burgundy">{t('quote_line2')}</span>
         </blockquote>
-        <div className="gold-rule w-16 mx-auto mt-12" />
+        <p className="font-jost text-[11px] tracking-[0.35em] uppercase text-muted mt-10">
+          {t('quote_author')}
+        </p>
+        <div className="gold-rule w-16 mx-auto mt-10" />
       </div>
     </section>
   );
