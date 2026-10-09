@@ -26,9 +26,9 @@ export const PRODUCTS = {
   tablea: { name: 'TABLEA CHOCOLATE CAKE', image: null, look: { type: 'layer', a: '#3A1F17', b: '#5B3424', top: '#2A140E', dot: '#C9A96E' } },
   ensaymada: { name: 'QUESO ENSAYMADA', image: null, look: { type: 'pieces', shape: 'swirl', a: '#E8B871', b: '#F5DA7A' } },
 
-  brazo: { name: "MAMA'S BRAZO DE MERCEDES", image: null, look: { type: 'roll', a: '#F6E9CF', b: '#C98F4E', c: '#F2C14E' } },
-  banana: { name: 'MOIST BANANA CHEESECAKE', image: null, look: { type: 'round', a: '#F3E6C4', top: '#E7C766', dot: '#F8EDC8', crust: '#B9824A' } },
-  ube: { name: 'MOIST UBE CHEESECAKE', image: null, look: { type: 'round', a: '#9B6BB3', top: '#7A4A97', dot: '#E8D9F0', crust: '#B9824A' } },
+  brazo: { name: "MAMA'S BRAZO DE MERCEDES", image: '/images/products/mamas-brazo.webp', look: { type: 'roll', a: '#F6E9CF', b: '#C98F4E', c: '#F2C14E' } },
+  banana: { name: 'MOIST BANANA CHEESECAKE', image: '/images/products/moist-banana-cheesecake.webp', look: { type: 'round', a: '#F3E6C4', top: '#E7C766', dot: '#F8EDC8', crust: '#B9824A' } },
+  ube: { name: 'MOIST UBE CHEESECAKE', image: '/images/products/moist-ube-cheesecake.webp', look: { type: 'round', a: '#9B6BB3', top: '#7A4A97', dot: '#E8D9F0', crust: '#B9824A' } },
 };
 
 // Four seasonal collections (Philippine calendar), three creations each.
