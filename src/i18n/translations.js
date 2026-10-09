@@ -35,7 +35,7 @@ export const translations = {
     countdown_hours: 'Hours',
     countdown_minutes: 'Minutes',
     countdown_seconds: 'Seconds',
-    countdown_cta: 'Reserve Your Box',
+    countdown_cta: 'Reserve Your Picasso',
     countdown_live: 'The atelier is open.',
 
     paskuhan_label: 'September — December',
@@ -87,7 +87,7 @@ export const translations = {
     heirloom_short: 'Heirloom',
 
     quote_line1: 'Paintings are praised in minutes.',
-    quote_line2: 'Pastries are preserved in memory.',
+    quote_line2: 'Pastries are forever preserved in memories.',
     quote_author: '— Chef Al',
 
     maison_label: 'Our Story',
@@ -103,7 +103,7 @@ export const translations = {
     philosophy_p3: 'We do not bake to impress. We bake to be remembered.',
 
     values_label: 'Our Values',
-    values_headline: 'The P.A.S.T.R.Y. of Picasso of Pastry',
+    values_headline: 'The Picasso of P.A.S.T.R.Y.',
     values_1_title: 'Pure\nProvenance',
     values_1_desc: 'The finest ingredients, honestly sourced.',
     values_2_title: 'Artful\nAttention',
@@ -129,8 +129,8 @@ export const translations = {
     founder_caption: 'Chef Al & Chef Phoebe Bacolod',
 
     order_label: 'Made to Order',
-    order_head: 'Reserve your box.',
-    order_sub: 'Every creation is made by hand, in small batches, only when you order. Message Chef Al to reserve your box for pickup or delivery around Cebu.',
+    order_head: 'Reserve your Picasso.',
+    order_sub: 'Every creation is made by hand, in small batches, only when you order. Message Chef Al to reserve your Picasso for pickup or delivery around Cebu.',
     order_cta: 'Order via Facebook',
 
     newsletter_label: 'By Invitation',
@@ -185,7 +185,7 @@ export const translations = {
     countdown_hours: 'Oras',
     countdown_minutes: 'Minuto',
     countdown_seconds: 'Segundo',
-    countdown_cta: 'Magpareserba ng Kahon',
+    countdown_cta: 'Magpareserba ng Iyong Picasso',
     countdown_live: 'Bukas na ang atelier.',
 
     paskuhan_label: 'Setyembre — Disyembre',
@@ -237,7 +237,7 @@ export const translations = {
     heirloom_short: 'Pamana',
 
     quote_line1: 'Ang mga painting ay pinupuri sa loob ng ilang minuto.',
-    quote_line2: 'Ang mga pastry ay iniingatan sa alaala.',
+    quote_line2: 'Ang mga pastry ay habambuhay na iniingatan sa mga alaala.',
     quote_author: '— Chef Al',
 
     maison_label: 'Aming Kuwento',
@@ -253,7 +253,7 @@ export const translations = {
     philosophy_p3: 'Hindi kami nagluluto para magpabilib. Nagluluto kami para maalala.',
 
     values_label: 'Aming mga Pinahahalagahan',
-    values_headline: 'Ang P.A.S.T.R.Y. ng Picasso of Pastry',
+    values_headline: 'Ang Picasso ng P.A.S.T.R.Y.',
     values_1_title: 'Pure\nProvenance',
     values_1_desc: 'Piling sangkap, tapat ang pinagmulan.',
     values_2_title: 'Artful\nAttention',
@@ -279,8 +279,8 @@ export const translations = {
     founder_caption: 'Chef Al at Chef Phoebe Bacolod',
 
     order_label: 'Gawa Ayon sa Order',
-    order_head: 'Magpareserba ng iyong kahon.',
-    order_sub: 'Bawat likha ay gawa sa kamay, sa maliliit na batch, kapag umorder ka lamang. Mag-message kay Chef Al upang magpareserba para sa pickup o delivery sa paligid ng Cebu.',
+    order_head: 'Magpareserba ng iyong Picasso.',
+    order_sub: 'Bawat likha ay gawa sa kamay, sa maliliit na batch, kapag umorder ka lamang. Mag-message kay Chef Al upang magpareserba ng iyong Picasso para sa pickup o delivery sa paligid ng Cebu.',
     order_cta: 'Umorder sa Facebook',
 
     newsletter_label: 'Sa Imbitasyon',
@@ -335,7 +335,7 @@ export const translations = {
     countdown_hours: 'Oras',
     countdown_minutes: 'Minuto',
     countdown_seconds: 'Segundo',
-    countdown_cta: 'Pagpareserba og Kahon',
+    countdown_cta: 'Pagpareserba sa Imong Picasso',
     countdown_live: 'Abli na ang atelier.',
 
     paskuhan_label: 'Septiyembre — Disyembre',
@@ -387,7 +387,7 @@ export const translations = {
     heirloom_short: 'Panulondon',
 
     quote_line1: 'Ang mga painting gidayeg sulod sa pipila ka minuto.',
-    quote_line2: 'Ang mga pastry gitipigan sa handumanan.',
+    quote_line2: 'Ang mga pastry gitipigan hangtod sa kahangturan sa mga handumanan.',
     quote_author: '— Chef Al',
 
     maison_label: 'Among Istorya',
@@ -403,7 +403,7 @@ export const translations = {
     philosophy_p3: 'Wala mi magluto aron makapahingangha. Nagluto mi aron mahinumdoman.',
 
     values_label: 'Among mga Bili',
-    values_headline: 'Ang P.A.S.T.R.Y. sa Picasso of Pastry',
+    values_headline: 'Ang Picasso sa P.A.S.T.R.Y.',
     values_1_title: 'Pure\nProvenance',
     values_1_desc: 'Pinili nga sangkap, tinuod ang gigikanan.',
     values_2_title: 'Artful\nAttention',
@@ -429,8 +429,8 @@ export const translations = {
     founder_caption: 'Chef Al ug Chef Phoebe Bacolod',
 
     order_label: 'Hinimo Sumala sa Order',
-    order_head: 'Pagpareserba sa imong kahon.',
-    order_sub: 'Matag binuhatan hinimo sa kamot, sa gamay nga batch, kung mag-order ka lang. I-message si Chef Al aron makapareserba para sa pickup o delivery sa palibot sa Sugbo.',
+    order_head: 'Pagpareserba sa imong Picasso.',
+    order_sub: 'Matag binuhatan hinimo sa kamot, sa gamay nga batch, kung mag-order ka lang. I-message si Chef Al aron makapareserba sa imong Picasso para sa pickup o delivery sa palibot sa Sugbo.',
     order_cta: 'Order pinaagi sa Facebook',
 
     newsletter_label: 'Pinaagi sa Imbitasyon',
@@ -485,7 +485,7 @@ export const translations = {
     countdown_hours: 'Horas',
     countdown_minutes: 'Minutos',
     countdown_seconds: 'Segundos',
-    countdown_cta: 'Reserva tu Caja',
+    countdown_cta: 'Reserva tu Picasso',
     countdown_live: 'El atelier está abierto.',
 
     paskuhan_label: 'Septiembre — Diciembre',
@@ -537,7 +537,7 @@ export const translations = {
     heirloom_short: 'Herencia',
 
     quote_line1: 'Las pinturas se elogian en minutos.',
-    quote_line2: 'Los pasteles se guardan en la memoria.',
+    quote_line2: 'Los pasteles se guardan para siempre en los recuerdos.',
     quote_author: '— Chef Al',
 
     maison_label: 'Nuestra Historia',
@@ -553,7 +553,7 @@ export const translations = {
     philosophy_p3: 'No horneamos para impresionar. Horneamos para ser recordados.',
 
     values_label: 'Nuestros Valores',
-    values_headline: 'El P.A.S.T.R.Y. de Picasso of Pastry',
+    values_headline: 'El Picasso de P.A.S.T.R.Y.',
     values_1_title: 'Pure\nProvenance',
     values_1_desc: 'Los mejores ingredientes, de origen honesto.',
     values_2_title: 'Artful\nAttention',
@@ -579,8 +579,8 @@ export const translations = {
     founder_caption: 'Chef Al y Chef Phoebe Bacolod',
 
     order_label: 'Bajo Pedido',
-    order_head: 'Reserva tu caja.',
-    order_sub: 'Cada creación se hace a mano, en pequeños lotes, solo cuando haces tu pedido. Escribe al Chef Al para reservar tu caja con recogida o entrega en Cebú.',
+    order_head: 'Reserva tu Picasso.',
+    order_sub: 'Cada creación se hace a mano, en pequeños lotes, solo cuando haces tu pedido. Escribe al Chef Al para reservar tu Picasso con recogida o entrega en Cebú.',
     order_cta: 'Pedir por Facebook',
 
     newsletter_label: 'Por Invitación',
