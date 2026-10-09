@@ -126,7 +126,7 @@ export const translations = {
     founder_p4: 'Thank you for letting us bake for the people you love.',
     founder_closing: 'With love,',
     founder_signature: 'Chef Al & Chef Phoebe',
-    founder_caption: 'Chef Al-joffri Bacolod',
+    founder_caption: 'Chef Al & Chef Phoebe Bacolod',
 
     order_label: 'Made to Order',
     order_head: 'Reserve your box.',
@@ -276,7 +276,7 @@ export const translations = {
     founder_p4: 'Salamat sa pagpapahintulot na magluto kami para sa mga mahal mo sa buhay.',
     founder_closing: 'Nagmamahal,',
     founder_signature: 'Chef Al at Chef Phoebe',
-    founder_caption: 'Chef Al-joffri Bacolod',
+    founder_caption: 'Chef Al at Chef Phoebe Bacolod',
 
     order_label: 'Gawa Ayon sa Order',
     order_head: 'Magpareserba ng iyong kahon.',
@@ -426,7 +426,7 @@ export const translations = {
     founder_p4: 'Salamat sa pagtugot kanamo nga magluto alang sa imong mga minahal.',
     founder_closing: 'Uban sa gugma,',
     founder_signature: 'Chef Al ug Chef Phoebe',
-    founder_caption: 'Chef Al-joffri Bacolod',
+    founder_caption: 'Chef Al ug Chef Phoebe Bacolod',
 
     order_label: 'Hinimo Sumala sa Order',
     order_head: 'Pagpareserba sa imong kahon.',
@@ -576,7 +576,7 @@ export const translations = {
     founder_p4: 'Gracias por dejarnos hornear para las personas que amas.',
     founder_closing: 'Con amor,',
     founder_signature: 'Chef Al y Chef Phoebe',
-    founder_caption: 'Chef Al-joffri Bacolod',
+    founder_caption: 'Chef Al y Chef Phoebe Bacolod',
 
     order_label: 'Bajo Pedido',
     order_head: 'Reserva tu caja.',

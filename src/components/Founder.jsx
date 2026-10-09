@@ -11,8 +11,8 @@ export default function Founder() {
         <figure>
           <div className="img-hover-zoom border border-champagne/40 p-3 bg-pearl">
             <img
-              src="/images/chef/chef-al.webp"
-              alt="Chef Al-joffri Bacolod"
+              src="/images/chef/chefs-al-and-phoebe.webp"
+              alt="Chef Al-joffri Bacolod and Chef Phoebe Bacolod"
               className="w-full aspect-[4/5] object-cover object-top"
               loading="lazy"
             />
