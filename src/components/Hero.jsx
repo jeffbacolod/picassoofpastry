@@ -46,45 +46,45 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="top" className="relative h-screen min-h-[640px] w-full flex items-center justify-center bg-plum overflow-hidden">
-      {/* Background: velvet burgundy light */}
-      <div
+    <section id="top" className="relative h-screen min-h-[640px] w-full flex items-start md:items-center bg-bordeaux md:bg-plum overflow-hidden">
+      {/* Background photo — moist ube cheesecake on burgundy velvet */}
+      <img
         ref={bgRef}
-        className="absolute inset-0 z-0 will-change-transform"
-        style={{
-          background:
-            'radial-gradient(ellipse at 50% 35%, #7A1E32 0%, #4A0F1E 40%, #2B0912 75%, #16040A 100%)',
-        }}
+        src="/images/hero/hero-ube-cheesecake.webp"
+        srcSet="/images/hero/hero-ube-cheesecake-small.webp 800w, /images/hero/hero-ube-cheesecake.webp 1376w"
+        sizes="100vw"
+        alt=""
+        fetchPriority="high"
+        className="absolute bottom-0 left-0 w-full h-[56%] md:inset-0 md:h-full object-cover object-[86%_center] md:object-center z-0 will-change-transform"
       />
-      {/* Champagne ribbon running through the hero */}
-      <div
-        className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-px z-[1] ribbon-shimmer opacity-70 pointer-events-none"
-        style={{ maskImage: 'linear-gradient(180deg, #000 0%, #000 28%, transparent 33%, transparent 72%, #000 78%)', WebkitMaskImage: 'linear-gradient(180deg, #000 0%, #000 28%, transparent 33%, transparent 72%, #000 78%)' }}
-      />
+      {/* Phones: text on burgundy above, photo below. Desktop: left-side fade behind the text */}
+      <div className="md:hidden absolute bottom-0 left-0 w-full h-[56%] z-[1] pointer-events-none bg-[linear-gradient(180deg,#4A0F1E_0%,rgba(74,15,30,0)_35%)]" />
+      <div className="hidden md:block absolute inset-0 z-[1] pointer-events-none bg-[linear-gradient(90deg,rgba(43,9,18,0.88)_0%,rgba(43,9,18,0.55)_40%,rgba(43,9,18,0)_68%)]" />
+      <div className="absolute inset-0 z-[1] pointer-events-none bg-[linear-gradient(180deg,rgba(22,4,10,0.45)_0%,rgba(22,4,10,0)_22%,rgba(22,4,10,0)_75%,rgba(22,4,10,0.55)_100%)]" />
       {/* Fine gold frame */}
       <div className="absolute inset-5 md:inset-8 z-[1] border border-champagne/20 pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 px-8 lg:px-20 max-w-5xl mx-auto text-center flex flex-col items-center">
-        <p ref={eyebrowRef} className="font-jost text-[11px] tracking-[0.45em] uppercase text-champagne mb-8">
+      <div className="relative z-10 w-full px-8 pt-28 sm:px-[8%] md:pt-0 lg:px-[10%] flex flex-col items-center text-center md:items-start md:text-left">
+        <p ref={eyebrowRef} className="font-jost text-[11px] tracking-[0.45em] uppercase text-champagne mb-5 md:mb-8">
           {t('hero_eyebrow')}
         </p>
         <h1
           ref={headlineRef}
-          className="font-spectral text-[clamp(2.75rem,7vw,5.75rem)] leading-[1.05] text-pearl mb-6"
+          className="font-spectral text-[clamp(2.75rem,6.5vw,5.75rem)] leading-[1.05] text-pearl mb-5 md:mb-6 md:max-w-[9ch] lg:max-w-none"
         >
           {t('hero_headline')}
         </h1>
         <p
           ref={subRef}
-          className="font-jost text-[clamp(0.8rem,1.4vw,1rem)] tracking-[0.4em] uppercase text-champagne-light/80 mb-12"
+          className="font-jost text-[clamp(0.8rem,1.4vw,1rem)] tracking-[0.4em] uppercase text-champagne-light/80 mb-8 md:mb-12"
         >
           {t('hero_sub')}
         </p>
-        <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4">
+        <div ref={ctaRef} className="flex flex-row gap-3 md:gap-4">
           <a
             href="#collections"
-            className="inline-block font-jost text-[12px] tracking-[0.3em] uppercase px-10 py-4 bg-pearl text-burgundy border border-pearl hover:bg-transparent hover:text-pearl transition-all duration-300 hover:tracking-[0.32em]"
+            className="inline-block font-jost text-[12px] tracking-[0.3em] uppercase px-5 sm:px-10 py-4 bg-pearl text-burgundy border border-pearl hover:bg-transparent hover:text-pearl transition-all duration-300 hover:tracking-[0.32em]"
           >
             {t('cta_discover')}
           </a>
@@ -92,7 +92,7 @@ export default function Hero() {
             href={ORDER_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block font-jost text-[12px] tracking-[0.3em] uppercase px-10 py-4 border border-champagne text-champagne-light hover:bg-champagne hover:text-plum transition-all duration-300 hover:tracking-[0.32em]"
+            className="inline-block font-jost text-[12px] tracking-[0.3em] uppercase px-5 sm:px-10 py-4 border border-champagne text-champagne-light hover:bg-champagne hover:text-plum transition-all duration-300 hover:tracking-[0.32em]"
           >
             {t('cta_order')}
           </a>
@@ -100,7 +100,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll cue */}
-      <a href="#collections" aria-label={t('cta_discover')} className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-champagne/70 hover:text-champagne transition-colors">
+      <a href="#collections" aria-label={t('cta_discover')} className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2 text-champagne/70 hover:text-champagne transition-colors">
         <span className="font-jost text-[10px] tracking-[0.4em] uppercase">{t('scroll')}</span>
         <span className="block w-px h-8 bg-champagne/60" />
       </a>

@@ -73,7 +73,7 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .reveal, [data-stagger-child] { opacity: 1; transform: none; transition: none; }
-  .marquee-track, .ribbon-shimmer { animation: none; }
+  .marquee-track { animation: none; }
 }
 
 /* Image hover zoom */
@@ -98,18 +98,6 @@ a[class*="tracking-"][class*="uppercase"] {
 .gold-rule {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--color-champagne), transparent);
-}
-
-/* Slow shimmer along the hero ribbon */
-@keyframes shimmer {
-  0% { background-position: 0 -200%; }
-  100% { background-position: 0 200%; }
-}
-
-.ribbon-shimmer {
-  background: linear-gradient(180deg, transparent 0%, var(--color-champagne) 45%, var(--color-champagne-light) 50%, var(--color-champagne) 55%, transparent 100%);
-  background-size: 100% 200%;
-  animation: shimmer 6s ease-in-out infinite;
 }
 
 /* Infinite marquee */
