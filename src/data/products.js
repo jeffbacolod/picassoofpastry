@@ -31,14 +31,17 @@ export const PRODUCTS = {
   ube: { name: 'MOIST UBE CHEESECAKE', image: '/images/products/moist-ube-cheesecake.webp', look: { type: 'round', a: '#9B6BB3', top: '#7A4A97', dot: '#E8D9F0', crust: '#B9824A' } },
 };
 
+// Stand-in group photo for collections still waiting on their own shoot.
+const COLLECTION_PLACEHOLDER = '/images/collections/collection-placeholder.webp';
+
 // Four seasonal collections (Philippine calendar), three creations each.
 // `tone` sets the box colour, `glow` the backdrop light.
-// `image` is the group photo; the Paskuhan boxes stand in until each season is shot.
+// `image` is the collection's group photo.
 export const COLLECTIONS = {
   paskuhan: { products: ['sansrival', 'godsfood', 'bibingka'], tone: 'burgundy', glow: '#7A2236' },
-  fiesta: { products: ['silvanas', 'cupcakes', 'yema'], tone: 'bordeaux', glow: '#8A3A2A', image: '/images/collections/collection-fiesta.webp' },
-  taginit: { products: ['mango', 'buko', 'calamansi'], tone: 'burgundy', glow: '#9A6A2A', image: '/images/collections/collection-taginit.webp' },
-  tagulan: { products: ['torta', 'tablea', 'ensaymada'], tone: 'plum', glow: '#4A2A3A', image: '/images/collections/collection-tagulan.webp' },
+  fiesta: { products: ['silvanas', 'cupcakes', 'yema'], tone: 'bordeaux', glow: '#8A3A2A', image: COLLECTION_PLACEHOLDER },
+  taginit: { products: ['mango', 'buko', 'calamansi'], tone: 'burgundy', glow: '#9A6A2A', image: COLLECTION_PLACEHOLDER },
+  tagulan: { products: ['torta', 'tablea', 'ensaymada'], tone: 'plum', glow: '#4A2A3A', image: COLLECTION_PLACEHOLDER },
 };
 
 // Year-round signatures — Mama's recipes.
