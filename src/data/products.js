@@ -10,9 +10,9 @@ export const LAUNCH_DATE = new Date('2026-11-03T10:00:00+08:00');
 // `look` describes the pastry drawn inside the box window:
 // type = roll | round | layer | pie | cupcakes | pieces, plus its colours.
 export const PRODUCTS = {
-  sansrival: { name: 'SANS RIVAL', image: null, look: { type: 'layer', a: '#E9D2A6', b: '#F7EEDC', top: '#E2C58E', dot: '#A86B34' } },
-  godsfood: { name: 'FOOD FOR THE GODS', image: null, look: { type: 'pieces', shape: 'bar', a: '#6E4024', b: '#C9A26B' } },
-  bibingka: { name: 'BIBINGKA CHEESECAKE', image: null, look: { type: 'round', a: '#F3E3B3', top: '#D9A055', dot: '#FBF4E4', crust: '#5E7A3A' } },
+  sansrival: { name: 'SANS RIVAL', image: '/images/products/sans-rival.webp', look: { type: 'layer', a: '#E9D2A6', b: '#F7EEDC', top: '#E2C58E', dot: '#A86B34' } },
+  godsfood: { name: 'FOOD FOR THE GODS', image: '/images/products/food-for-the-gods.webp', look: { type: 'pieces', shape: 'bar', a: '#6E4024', b: '#C9A26B' } },
+  bibingka: { name: 'BIBINGKA CHEESECAKE', image: '/images/products/bibingka-cheesecake.webp', look: { type: 'round', a: '#F3E3B3', top: '#D9A055', dot: '#FBF4E4', crust: '#5E7A3A' } },
 
   silvanas: { name: 'SILVANAS', image: null, look: { type: 'pieces', shape: 'oval', a: '#E8D3A8', b: '#C79A5E' } },
   cupcakes: { name: 'COUTURE CUPCAKES', image: null, look: { type: 'cupcakes', a: '#C9A96E', b: '#F4E6D8', c: '#B3223A' } },
@@ -33,11 +33,12 @@ export const PRODUCTS = {
 
 // Four seasonal collections (Philippine calendar), three creations each.
 // `tone` sets the box colour, `glow` the backdrop light.
+// `image` is the group photo; the Paskuhan boxes stand in until each season is shot.
 export const COLLECTIONS = {
   paskuhan: { products: ['sansrival', 'godsfood', 'bibingka'], tone: 'burgundy', glow: '#7A2236' },
-  fiesta: { products: ['silvanas', 'cupcakes', 'yema'], tone: 'bordeaux', glow: '#8A3A2A' },
-  taginit: { products: ['mango', 'buko', 'calamansi'], tone: 'burgundy', glow: '#9A6A2A' },
-  tagulan: { products: ['torta', 'tablea', 'ensaymada'], tone: 'plum', glow: '#4A2A3A' },
+  fiesta: { products: ['silvanas', 'cupcakes', 'yema'], tone: 'bordeaux', glow: '#8A3A2A', image: '/images/collections/collection-fiesta.webp' },
+  taginit: { products: ['mango', 'buko', 'calamansi'], tone: 'burgundy', glow: '#9A6A2A', image: '/images/collections/collection-taginit.webp' },
+  tagulan: { products: ['torta', 'tablea', 'ensaymada'], tone: 'plum', glow: '#4A2A3A', image: '/images/collections/collection-tagulan.webp' },
 };
 
 // Year-round signatures — Mama's recipes.

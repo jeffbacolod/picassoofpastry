@@ -23,7 +23,7 @@ export default function CollectionGrid() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 reveal" data-stagger>
           {SEASONS.map((season) => {
-            const { products, tone, glow } = COLLECTIONS[season];
+            const { products, tone, glow, image } = COLLECTIONS[season];
             return (
               <div key={season} className="text-center flex flex-col" data-stagger-child>
                 <p className="font-jost text-[11px] tracking-[0.3em] uppercase text-muted mb-3">
@@ -33,7 +33,13 @@ export default function CollectionGrid() {
                   {t(`${season}_title`)}
                 </h3>
                 <div className="img-hover-zoom mb-6">
-                  <ProductVisual tone={tone} glow={glow} variant="stack" looks={products.map((key) => PRODUCTS[key].look)} />
+                  <ProductVisual
+                    product={image ? { name: t(`${season}_title`), image } : undefined}
+                    tone={tone}
+                    glow={glow}
+                    variant="stack"
+                    looks={products.map((key) => PRODUCTS[key].look)}
+                  />
                 </div>
                 <p className="font-spectral italic text-muted mb-6 min-h-[3em]">
                   {t(`${season}_desc`)}
